@@ -1,6 +1,6 @@
 # Training documentation
 
-This project depends on [Pandoc](https://pandoc.org/) and [GNU Make](https://www.gnu.org/software/make/).
+This project depends on [Pandoc](https://pandoc.org/), [GNU Make](https://www.gnu.org/software/make/) and a working TeX installation.
 
 To build the document run Make:
 ```bash
