@@ -1,4 +1,4 @@
-MDSOURCES  := $(wildcard *.md)
+MDSOURCES  := $(filter-out README.md, $(wildcard *.md))
 
 .PHONY: all clean
 
