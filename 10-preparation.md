@@ -8,17 +8,18 @@ Do oceny modelu wybraliśmy następujące metryki:
 
 #### Loss (funkcja straty)
 
-Funkcja straty Cross Entropy
+Funkcja straty Cross Entropy (Entropia skrośna) korzysta z prawdopodobieństwo, że p jaką
 
-$$\frac{1}{N} \sum_{n=1}^{N} \log \left( \frac{\exp(x_{n, y_n})}{\sum_{c=1}^{C} \exp(x_{n, c})} \right) \cdot \mathbf{1}\{y_n \ne \text{ignore\_index}\}  $$
+$$-\frac{1}{N} \sum_{i=1}^{N} \sum_{j=1}^{C} \left( y_{i,j} \cdot \log(p_{i,j}) \right)$$
 
-![alt text](img/some_equation.png)
+Gdzie $y_{i,j}$ to prawdziwa wartość klasyfikacji próbki i do klasy j.
+A $p_{i,j}$ to przewidywane prawdopodobieństwo klasyfikacji próbki i do klasy j.
 
 #### Accuracy (dokładność)
 
 Dokładność określa, jaka część spośród przypadków została poprawnie sklasyfikowana
 
-$$ \text{Dokładność} = \frac{Liczba poprawnie sklasyfikowanych przypadków}{Liczba wszystkich przypadków}$$
+$$\text{Dokładność} = \frac{\text{Liczba poprawnie sklasyfikowanych przypadków}}{\text{Liczba wszystkich przypadków}}$$
 
 #### F-score
 
