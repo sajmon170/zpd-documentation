@@ -10,3 +10,5 @@ Jako podstawowy model wybraliśmy sieć konwolucyjną w PyTorch, na podstawie pr
 - Liniowych - Przekształcających dane wejściowe transformacją liniową.
 
 Gdzie macierz to jeden kanał tensora reprezentującego wielokanałowy obraz.
+
+Jako funkcję straty wybrana została entropia krzyżowa, a optimizer to SGD (Stochastic Gradient Descent), ze współczynnikiem uczenia 0.001, i pędem 0.9.
