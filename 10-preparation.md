@@ -46,5 +46,3 @@ Dla wielu klas korzystamy z metody "one vs rest", która wyznacza krzywe po kole
 #### Confusion matrix (Tablica pomyłek)
 
 Tablica pomyłek to tablica, w której wiersze to poprawne klasy próbek, a kolumny to przypisanie do tych klas przez nasz algorytm. Liczby poprawnie sklasyfikowanych przypadków znajdują się na głównej przekątnej. Dzięki niej można zobaczyć, jakie klasy są najczęściej mylone z innymi.
-
-#### $R^2$
